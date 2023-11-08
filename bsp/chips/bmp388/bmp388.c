@@ -183,10 +183,10 @@ bmp388_par_t* bmp388_get_par(void) {
         bmp388_vars.bmp388_nvm_par.nvm_par_t3/(pow(2,48));
         
     bmp388_vars.bmp388_par.par_p1 = \
-        bmp388_vars.bmp388_nvm_par.nvm_par_p1/(pow(2,20));
+        (bmp388_vars.bmp388_nvm_par.nvm_par_p1-pow(2,14))/(pow(2,20));
         
     bmp388_vars.bmp388_par.par_p2 = \
-        bmp388_vars.bmp388_nvm_par.nvm_par_p2/(pow(2,29));
+        (bmp388_vars.bmp388_nvm_par.nvm_par_p2-pow(2,14))/(pow(2,29));
 
     bmp388_vars.bmp388_par.par_p3 = \
         bmp388_vars.bmp388_nvm_par.nvm_par_p3/(pow(2,32));

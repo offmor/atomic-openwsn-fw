@@ -199,7 +199,7 @@ int sender_main(void){
                 switch (app_vars.state) {
                     case APP_STATE_RX:
                         // started receiving a packet
-                        //T2 = timer_getCapturedValue(CC1);
+                        T2 = timer_getCapturedValue(CC1);
                         // led
                         leds_error_on();
                         break;
@@ -233,7 +233,7 @@ int sender_main(void){
                                             );
 
                         //T1 = timer_getCapturedValue(CC0);
-                       T2 = timer_getCapturedValue(CC1);
+                       //T2 = timer_getCapturedValue(CC1);
 
                         uint32_t tmp = T2 - T1;
                         int i = 0;
@@ -357,10 +357,10 @@ int receiver_main(void){
                 switch (app_vars.state) {
                     case APP_STATE_RX:
                         // started receiving a packet
-                        timer_stop();
-                        timer_clear();
-                        timer_schedule(2,16000*10);    //16000 = 1ms
-                        timer_start();
+                        //timer_stop();
+                        //timer_clear();
+                        //timer_schedule(2,160000);    //16000 = 1ms
+                        //timer_start();
                         // led
                         leds_error_on();
                         break;
@@ -393,6 +393,11 @@ int receiver_main(void){
                                 );
                         
                         //timer_schedule(2,16000);    //16000 = 1ms
+                        timer_stop();
+                        timer_clear();
+                        timer_schedule(2,160000);    //16000 = 1ms
+                        timer_start();
+                        
 
                         radio_loadPacket(app_vars.txpk_buf, app_vars.txpk_len);
                         radio_txEnable();

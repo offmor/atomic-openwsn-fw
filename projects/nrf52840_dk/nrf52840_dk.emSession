@@ -82,11 +82,11 @@
  <Files>
   <SessionOpenFile windowGroup="DockEditLeft" x="15" y="57" useTextEdit="1" path="01bsp_timer/01bsp_timer.c" left="0" top="23" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="21" y="580" useTextEdit="1" path="nrf52840_dk.emProject" left="0" top="553" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="52" y="383" useTextEdit="1" path="01bsp_rtt/01bsp_rtt.c" left="0" selected="1" top="379" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="398" useTextEdit="1" path="01bsp_rtt/01bsp_rtt.c" left="0" selected="1" top="379" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="15" y="61" useTextEdit="1" path="01bsp_ppi/01bsp_ppi.c" left="0" top="23" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="58" useTextEdit="1" path="../../bsp/boards/nrf52840_dk/ppi.c" left="0" top="38" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="58" useTextEdit="1" path="../../bsp/boards/nrf52840_dk/ppi.c" left="0" top="30" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="24" y="285" useTextEdit="1" openedFrom="C:/Users/11422/Desktop/work_nrf52840/openwsn-fw/projects/nrf52840_dk/01bsp_rtt/01bsp_rtt.c" path="../../bsp/boards/nrf52840_dk/radio.c" left="0" top="263" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" openedFrom="C:/Users/11422/Desktop/work_nrf52840/openwsn-fw/projects/nrf52840_dk/01bsp_timer/01bsp_timer.c" path="../../bsp/boards/nrf52840_dk/timer.c" left="0" top="27" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" openedFrom="C:/Users/11422/Desktop/work_nrf52840/openwsn-fw/projects/nrf52840_dk/01bsp_timer/01bsp_timer.c" path="../../bsp/boards/nrf52840_dk/timer.c" left="0" top="67" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="5" y="319" useTextEdit="1" path="../common/01bsp_radio/01bsp_radio.c" left="0" top="285" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="83" useTextEdit="1" path="../../bsp/boards/nrf52840_dk/uart.c" left="0" top="43" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="42" useTextEdit="1" path="01bsp_bmx160/01bsp_bmx160.c" left="0" top="30" codecName="Default"/>

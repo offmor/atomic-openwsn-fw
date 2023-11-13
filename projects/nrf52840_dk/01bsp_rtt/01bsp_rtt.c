@@ -357,7 +357,10 @@ int receiver_main(void){
                 switch (app_vars.state) {
                     case APP_STATE_RX:
                         // started receiving a packet
-                        timer_schedule(2,16000000);    //16000 = 1ms
+                        timer_stop();
+                        timer_clear();
+                        timer_schedule(2,16000*10);    //16000 = 1ms
+                        timer_start();
                         // led
                         leds_error_on();
                         break;
@@ -394,8 +397,8 @@ int receiver_main(void){
                         radio_loadPacket(app_vars.txpk_buf, app_vars.txpk_len);
                         radio_txEnable();
                         
-                        //delay_ms(3000);
-                        radio_txNow();
+                        //delay_ms(5*20);
+                        //radio_txNow();
                         app_vars.state = APP_STATE_TX;
                         // led
                         leds_error_off();

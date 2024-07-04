@@ -14,10 +14,10 @@
 
 #define NRF_GPIO_PIN_MAP(port, pin) (((port) << 5) | ((pin) & 0x1F))
 
-#define UART_RX_PIN       NRF_GPIO_PIN_MAP(0,8) // p0.08
-#define UART_TX_PIN       NRF_GPIO_PIN_MAP(0,6) // p0.06
-#define UART_CTS_PIN      NRF_GPIO_PIN_MAP(0,7) // p0.07
-#define UART_RTS_PIN      NRF_GPIO_PIN_MAP(0,5) // p0.05
+#define UART_RX_PIN       NRF_GPIO_PIN_MAP(0,20) // p0.08
+#define UART_TX_PIN       NRF_GPIO_PIN_MAP(0,11) // p0.06
+//#define UART_CTS_PIN      NRF_GPIO_PIN_MAP(0,7) // p0.07
+//#define UART_RTS_PIN      NRF_GPIO_PIN_MAP(0,5) // p0.05
 
 #define UART_BAUDRATE_115200        0x01D7E000  // Baud 115200
 #define UART_BAUDRATE_1M            0x10000000  // Baud 1M

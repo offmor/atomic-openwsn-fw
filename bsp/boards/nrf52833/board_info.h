@@ -64,6 +64,7 @@ to this board.
 #define EGU0_PRIORITY         0
 #define RADIO_PRIORITY        0
 #define UART_PRIORITY         1
+#define TIMER_PRIORITY        0
 
 //=========================== variables =======================================
 

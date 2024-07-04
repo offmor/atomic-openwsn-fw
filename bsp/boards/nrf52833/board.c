@@ -34,11 +34,11 @@ void board_init(void) {
     //clocks_start();
 
     // initialize bsp modules
-    //debugpins_init();
+    debugpins_init();
     leds_init();
-    //uart_init();
-    //radio_init();
-    //sctimer_init();
+    uart_init();
+    radio_init();
+    sctimer_init();
 }
 
 void board_sleep(void) {

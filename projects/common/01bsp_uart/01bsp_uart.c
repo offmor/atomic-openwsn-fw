@@ -105,7 +105,7 @@ uint8_t cb_uartRxCb(void) {
    uint8_t byte;
    
    // toggle LED
-   leds_error_toggle();
+   leds_radio_toggle();
    
    // read received byte
    byte = uart_readByte();

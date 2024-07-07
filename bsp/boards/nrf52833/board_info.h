@@ -31,6 +31,7 @@ to this board.
 #define PORT_SIGNED_INT_WIDTH        int32_t    // to check
 #define PORT_TICS_PER_MS                  33    // to check
 #define PORT_US_PER_TICK                  30    // to check
+#define PORT_MAX_TICKS_IN_SINGLE_CLOCK      (uint32_t)(0x00ffffff)
 
 #define SCHEDULER_WAKEUP()                  // todo
 #define SCHEDULER_ENABLE_INTERRUPT()        // todo
@@ -39,7 +40,7 @@ to this board.
 
 //===== IEEE802154E timing
 
-#define SLOTDURATION 8 // in miliseconds
+#define SLOTDURATION 20 // in miliseconds
 
 // time-slot related
 #define PORT_TsSlotDuration                 262 // 8ms, to check

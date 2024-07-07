@@ -224,7 +224,7 @@
       arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
       arm_target_device_name="NRF52833_XXAA"
       arm_target_interface_type="SWD"
-      c_user_include_directories="SEGGER"
+      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
       debug_target_connection="J-Link"
       link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
       linker_output_format="hex"
@@ -286,7 +286,7 @@
       arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
       arm_target_device_name="NRF52833_XXAA"
       arm_target_interface_type="SWD"
-      c_user_include_directories="SEGGER"
+      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
       debug_target_connection="J-Link"
       link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
       linker_output_format="hex"
@@ -348,7 +348,7 @@
       arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
       arm_target_device_name="NRF52833_XXAA"
       arm_target_interface_type="SWD"
-      c_user_include_directories="SEGGER"
+      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
       debug_target_connection="J-Link"
       link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
       linker_output_format="hex"
@@ -472,7 +472,7 @@
       arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
       arm_target_device_name="NRF52833_XXAA"
       arm_target_interface_type="SWD"
-      c_user_include_directories="SEGGER"
+      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
       debug_target_connection="J-Link"
       link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
       linker_output_format="hex"
@@ -506,130 +506,6 @@
       exclude=""
       filter="*.c"
       path="../common/01bsp_eui64"
-      recurse="No" />
-    <folder
-      Name="inc"
-      exclude=""
-      filter="*.h"
-      path="../../inc"
-      recurse="Yes" />
-    <folder
-      Name="bsp"
-      exclude="system_nrf52.c"
-      filter="*.s;*.c;*.h"
-      path="../../bsp/boards/nrf52833"
-      recurse="Yes" />
-  </project>
-  <project Name="01bsp_ppi">
-    <configuration
-      Name="Common"
-      arm_architecture="v8M_Mainline"
-      arm_core_type="Cortex-M4"
-      arm_endian="Little"
-      arm_fpu_type="FPv5-SP-D16"
-      arm_linker_heap_size="1024"
-      arm_linker_process_stack_size="0"
-      arm_linker_stack_size="1024"
-      arm_linker_variant="SEGGER"
-      arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
-      arm_target_device_name="NRF52833_XXAA"
-      arm_target_interface_type="SWD"
-      c_user_include_directories="SEGGER"
-      debug_target_connection="J-Link"
-      link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
-      linker_output_format="hex"
-      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00100000;RAM1 RWX 0x20000000 0x00040000"
-      project_directory=""
-      project_type="Executable" />
-    <configuration
-      Name="Debug"
-      arm_architecture="v7EM"
-      arm_assembler_variant="gcc"
-      arm_compiler_variant="gcc"
-      arm_core_type="Cortex-M4"
-      arm_endian="Little"
-      arm_fp_abi="Soft"
-      arm_fpu_type="FPv4-SP-D16"
-      arm_linker_variant="GNU"
-      arm_rtl_variant="Embedded Studio"
-      arm_simulator_memory_simulation_parameter="RX 00000000,00080000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
-      arm_target_device_name="nRF52833_xxAA"
-      c_preprocessor_definitions="NRF52833_XXAA;NRF52833"
-      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
-      debug_start_from_entry_point_symbol="No"
-      gcc_entry_point="Reset_Handler"
-      link_linker_script_file="../../bsp/boards/nrf52833/sdk/nrf52833.ld"
-      link_use_linker_script_file="Yes"
-      linker_additional_files=""
-      linker_section_placement_file="flash_placement.xml"
-      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00080000;RAM1 RWX 0x20000000 0x00020000" />
-    <folder
-      Name="application"
-      exclude=""
-      filter="*.c"
-      path="01bsp_ppi"
-      recurse="No" />
-    <folder
-      Name="inc"
-      exclude=""
-      filter="*.h"
-      path="../../inc"
-      recurse="Yes" />
-    <folder
-      Name="bsp"
-      exclude="system_nrf52.c"
-      filter="*.s;*.c;*.h"
-      path="../../bsp/boards/nrf52833"
-      recurse="Yes" />
-  </project>
-  <project Name="01bsp_rtt">
-    <configuration
-      Name="Common"
-      arm_architecture="v8M_Mainline"
-      arm_core_type="Cortex-M4"
-      arm_endian="Little"
-      arm_fpu_type="FPv5-SP-D16"
-      arm_linker_heap_size="1024"
-      arm_linker_process_stack_size="0"
-      arm_linker_stack_size="1024"
-      arm_linker_variant="SEGGER"
-      arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
-      arm_target_device_name="NRF52833_XXAA"
-      arm_target_interface_type="SWD"
-      c_user_include_directories="SEGGER"
-      debug_target_connection="J-Link"
-      link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
-      linker_output_format="hex"
-      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00100000;RAM1 RWX 0x20000000 0x00040000"
-      project_directory=""
-      project_type="Executable" />
-    <configuration
-      Name="Debug"
-      arm_architecture="v7EM"
-      arm_assembler_variant="gcc"
-      arm_compiler_variant="gcc"
-      arm_core_type="Cortex-M4"
-      arm_endian="Little"
-      arm_fp_abi="Soft"
-      arm_fpu_type="FPv4-SP-D16"
-      arm_linker_variant="GNU"
-      arm_rtl_variant="Embedded Studio"
-      arm_simulator_memory_simulation_parameter="RX 00000000,00080000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
-      arm_target_device_name="nRF52833_xxAA"
-      c_preprocessor_definitions="NRF52833_XXAA;NRF52833"
-      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
-      debug_start_from_entry_point_symbol="No"
-      gcc_entry_point="Reset_Handler"
-      link_linker_script_file="../../bsp/boards/nrf52833/sdk/nrf52833.ld"
-      link_use_linker_script_file="Yes"
-      linker_additional_files=""
-      linker_section_placement_file="flash_placement.xml"
-      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00080000;RAM1 RWX 0x20000000 0x00020000" />
-    <folder
-      Name="application"
-      exclude=""
-      filter="*.c"
-      path="01bsp_rtt"
       recurse="No" />
     <folder
       Name="inc"
@@ -704,6 +580,213 @@
       exclude="system_nrf52.c"
       filter="*.s;*.c;*.h"
       path="../../bsp/boards/nrf52833"
+      recurse="Yes" />
+  </project>
+  <project Name="03oos_macpong">
+    <configuration
+      Name="Common"
+      arm_architecture="v8M_Mainline"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_linker_heap_size="1024"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="1024"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
+      arm_target_device_name="NRF52833_XXAA"
+      arm_target_interface_type="SWD"
+      c_user_include_directories="../../bsp/boards;../../bsp/boards/nrf52833;../../bsp/boards/nrf52833/sdk;../../inc;../../drivers/common;../../drivers/common/crypto;../../kernel;../../openstack;../../openstack/02a-MAClow;../../openstack/02b-MAChigh;../../openstack/03a-IPHC;../../openstack/03b-IPv6;../../openstack/04-TRAN;../../openstack/04-TRAN/sock;../../openstack/cross-layers;../../openweb/;../../openweb/opencoap;../../openapps"
+      debug_target_connection="J-Link"
+      link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
+      linker_output_format="hex"
+      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00100000;RAM1 RWX 0x20000000 0x00040000"
+      project_directory=""
+      project_type="Executable" />
+    <configuration
+      Name="Debug"
+      arm_architecture="v7EM"
+      arm_assembler_variant="gcc"
+      arm_compiler_variant="gcc"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Soft"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_variant="GNU"
+      arm_rtl_variant="Embedded Studio"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00080000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="nRF52833_xxAA"
+      c_preprocessor_definitions="NRF52833_XXAA;NRF52833"
+      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
+      debug_start_from_entry_point_symbol="No"
+      gcc_entry_point="Reset_Handler"
+      link_linker_script_file="../../bsp/boards/nrf52833/sdk/nrf52833.ld"
+      link_use_linker_script_file="Yes"
+      linker_additional_files=""
+      linker_section_placement_file="flash_placement.xml"
+      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00080000;RAM1 RWX 0x20000000 0x00020000" />
+    <folder
+      Name="application"
+      exclude=""
+      filter="*.c"
+      path="../common/03oos_macpong"
+      recurse="No" />
+    <folder
+      Name="inc"
+      exclude=""
+      filter="*.h"
+      path="../../inc"
+      recurse="Yes" />
+    <folder
+      Name="bsp"
+      exclude="system_nrf52.c"
+      filter="*.s;*.c;*.h"
+      path="../../bsp/boards/nrf52833"
+      recurse="Yes" />
+    <folder Name="kernel">
+      <folder Name="openos">
+        <file file_name="../../kernel/openos/scheduler_types.h" />
+        <file file_name="../../kernel/openos/scheduler.c" />
+      </folder>
+      <file file_name="../../kernel/scheduler.h" />
+    </folder>
+    <folder Name="drivers">
+      <file file_name="../../drivers/common/openhdlc.c" />
+      <file file_name="../../drivers/common/openhdlc.h" />
+      <file file_name="../../drivers/common/opensensors.c" />
+      <file file_name="../../drivers/common/opensensors.h" />
+      <file file_name="../../drivers/common/openserial.c" />
+      <file file_name="../../drivers/common/openserial.h" />
+      <file file_name="../../drivers/common/opentimers.c" />
+      <file file_name="../../drivers/common/opentimers.h" />
+      <folder Name="crypto">
+        <file file_name="../../drivers/common/crypto/aes128.c" />
+        <file file_name="../../drivers/common/crypto/aes128.h" />
+        <file file_name="../../drivers/common/crypto/ccms.c" />
+        <file file_name="../../drivers/common/crypto/ccms.h" />
+        <file file_name="../../drivers/common/crypto/hkdf.c" />
+        <file file_name="../../drivers/common/crypto/hmac.c" />
+        <file file_name="../../drivers/common/crypto/sha.h" />
+        <file file_name="../../drivers/common/crypto/sha224-256.c" />
+        <file file_name="../../drivers/common/crypto/sha-private.h" />
+        <file file_name="../../drivers/common/crypto/usha.c" />
+      </folder>
+    </folder>
+    <folder
+      Name="openstack"
+      exclude="04-TRAN;03b-IPv6;03a-IPHC"
+      filter="*.h;*.c"
+      path="../../openstack"
+      recurse="Yes" />
+  </project>
+  <project Name="03oos_openwsn">
+    <configuration
+      Name="Common"
+      arm_architecture="v8M_Mainline"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_linker_heap_size="1024"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="1024"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
+      arm_target_device_name="NRF52833_XXAA"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="__WIN32__;OPENWSN_UDP_C;OPENWSN_UINJECT_C"
+      c_user_include_directories="../../bsp/boards;../../bsp/boards/nrf52833;../../bsp/boards/nrf52833/sdk;../../inc;../../drivers/common;../../drivers/common/crypto;../../kernel;../../openstack;../../openstack/02a-MAClow;../../openstack/02b-MAChigh;../../openstack/03a-IPHC;../../openstack/03b-IPv6;../../openstack/04-TRAN;../../openstack/04-TRAN/sock;../../openstack/cross-layers;../../openweb/;../../openweb/opencoap;../../openapps;../../openapps/uinject;../../openapps/cinfo;../../openapps/cjoin;../../openapps/cled;../../openapps/cweelknown;../../openapps/uecho"
+      debug_target_connection="J-Link"
+      link_linker_script_file="../../../bsp/boards/nrf52833/sdk/nrf52833_xxaa.ld"
+      linker_output_format="hex"
+      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00100000;RAM1 RWX 0x20000000 0x00040000"
+      project_directory=""
+      project_type="Executable" />
+    <configuration
+      Name="Debug"
+      arm_architecture="v7EM"
+      arm_assembler_variant="gcc"
+      arm_compiler_variant="gcc"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Soft"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_variant="GNU"
+      arm_rtl_variant="Embedded Studio"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00080000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="nRF52833_xxAA"
+      c_preprocessor_definitions="NRF52833_XXAA;NRF52833"
+      c_user_include_directories="../../bsp/boards/nrf52833/sdk;../../bsp/boards/nrf52833;../../bsp/boards/;../../inc/"
+      debug_start_from_entry_point_symbol="No"
+      gcc_entry_point="Reset_Handler"
+      link_linker_script_file="../../bsp/boards/nrf52833/sdk/nrf52833.ld"
+      link_use_linker_script_file="Yes"
+      linker_additional_files=""
+      linker_section_placement_file="flash_placement.xml"
+      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00080000;RAM1 RWX 0x20000000 0x00020000" />
+    <folder
+      Name="application"
+      exclude=""
+      filter="*.c"
+      path="../common/03oos_openwsn"
+      recurse="No" />
+    <folder
+      Name="inc"
+      exclude=""
+      filter="*.h"
+      path="../../inc"
+      recurse="Yes" />
+    <folder
+      Name="bsp"
+      exclude="system_nrf52.c"
+      filter="*.s;*.c;*.h"
+      path="../../bsp/boards/nrf52833"
+      recurse="Yes" />
+    <folder Name="kernel">
+      <folder Name="openos">
+        <file file_name="../../kernel/openos/scheduler_types.h" />
+        <file file_name="../../kernel/openos/scheduler.c" />
+      </folder>
+      <file file_name="../../kernel/scheduler.h" />
+    </folder>
+    <folder Name="drivers">
+      <file file_name="../../drivers/common/openhdlc.c" />
+      <file file_name="../../drivers/common/openhdlc.h" />
+      <file file_name="../../drivers/common/opensensors.c" />
+      <file file_name="../../drivers/common/opensensors.h" />
+      <file file_name="../../drivers/common/openserial.c" />
+      <file file_name="../../drivers/common/openserial.h" />
+      <file file_name="../../drivers/common/opentimers.c" />
+      <file file_name="../../drivers/common/opentimers.h" />
+      <folder Name="crypto">
+        <file file_name="../../drivers/common/crypto/aes128.c" />
+        <file file_name="../../drivers/common/crypto/aes128.h" />
+        <file file_name="../../drivers/common/crypto/ccms.c" />
+        <file file_name="../../drivers/common/crypto/ccms.h" />
+        <file file_name="../../drivers/common/crypto/hkdf.c" />
+        <file file_name="../../drivers/common/crypto/hmac.c" />
+        <file file_name="../../drivers/common/crypto/sha.h" />
+        <file file_name="../../drivers/common/crypto/sha224-256.c" />
+        <file file_name="../../drivers/common/crypto/sha-private.h" />
+        <file file_name="../../drivers/common/crypto/usha.c" />
+      </folder>
+    </folder>
+    <folder
+      Name="openapps"
+      exclude=""
+      filter="*.h;*.c"
+      path="../../openapps"
+      recurse="Yes" />
+    <folder
+      Name="openweb"
+      exclude=""
+      filter="*.h;*.c"
+      path="../../openweb"
+      recurse="Yes" />
+    <folder
+      Name="openstack"
+      exclude=""
+      filter="*.h;*.c"
+      path="../../openstack"
       recurse="Yes" />
   </project>
 </solution>

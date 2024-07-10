@@ -72,9 +72,9 @@ to this board.
 // The variables below are used by CoAP's registration engine.
 
 static const uint8_t rreg_uriquery[]        = "h=monolet";
-static const uint8_t infoBoardname[]        = "nRF52840-DK";
-static const uint8_t infouCName[]           = "nRF52840";
-static const uint8_t infoRadioName[]        = "nRF52840-BLE";
+static const uint8_t infoBoardname[]        = "nRF52833-DK";
+static const uint8_t infouCName[]           = "nRF52833";
+static const uint8_t infoRadioName[]        = "nRF52833-BLE";
 
 //=========================== prototypes ======================================
 

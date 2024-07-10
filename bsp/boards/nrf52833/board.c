@@ -12,6 +12,7 @@
 #include "uart.h"
 #include "sctimer.h"
 #include "radio.h"
+#include "i2c.h"
 
 //=========================== variables =======================================
 
@@ -39,6 +40,8 @@ void board_init(void) {
     uart_init();
     radio_init();
     sctimer_init();
+    i2c_init();
+    
 }
 
 void board_sleep(void) {
